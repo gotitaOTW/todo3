@@ -1,0 +1,25 @@
+todo list 3, aps:
+
+form agregarTareaForm
+
+un componente que muestra un input que al submitear tiene q haber al menos:
+- nombre de la tarea
+
+se lo lleva una función de App que para meterlo a la List le agrega:
+- un id
+- fecha actual
+- un bool tachado q arranca en false
+
+esta función la mete al listado
+
+div filtros
+cada uno actualiza el valor filtro con useState q se le pasa a listadoTareas
+
+div listadoTareas
+
+un componente q muestra listadoTareas y recibe el tipo de filtro que validará dentro del foreach para ver si llama a la función q le da forma o no (para ver si la muestra): usa otro componente q le da la "forma" dentro del .map (foreach). tambien si tildado=true muestra el titulo tachado
+
+al hacer click en el botón eliminar o tildar ese componente de forma tiene q pasarle el id de la tarea a la función q recibe por prop. recibe 2, eliminar y tildar, ambas desarolladas en el app q modifican el array tareas. lo q hacen es buscar la tarea con ese id y borrarla con .filter o cambiarle el valor tildada=a flase si es true y viceversa
+
+en assets vas metiendo los componentes
+
