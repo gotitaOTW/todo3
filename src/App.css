@@ -40,3 +40,114 @@
 .read-the-docs {
   color: #888;
 }
+
+
+.filtro, button[type="submit"]{
+  margin:2px;
+}
+
+
+body{
+  display:flex;
+  height: 100vh;
+  margin:0px;
+  padding:0px;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(245, 243, 239);
+}
+
+.container{
+  width:300%;
+  background-color: rgb(158, 32, 192);
+  border-radius: 10px;
+  padding:10px;
+}
+
+.cardTarea{
+  display: flex;
+  align-items: center;
+  margin-top:5px;
+  width: 100%;
+}
+.contenidoTarea{
+  display: flex;
+  align-items: start;
+  flex-direction: column;
+  background-color: rgb(222, 182, 233);
+  padding:2px; 
+  border-radius: 5px;
+  width: 80%;
+}
+
+.botonesTarea{
+  display: flex;
+  justify-content: space-around;
+  width: 20%;
+}
+
+.borrarTarea
+{
+  background-color:rgb(241, 114, 114);
+  border:transparent;
+}
+
+#listaTareas{
+  display: flex;
+  flex-direction: column;
+}
+.nombreTarea{
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+}
+
+.fechaTarea{
+  font-family: 'Lucida Sans', Verdana, sans-serif;
+  font-size:smaller;
+
+}
+
+.nombreTarea, .fechaTarea{
+  margin:5px;
+}
+
+button{
+margin-bottom:5px;
+}
+
+.cbTarea{
+  accent-color: #F6E7FA;
+  width:15px;
+  height: 15px;
+}
+
+input,button[type="submit"],.filtro{
+  background-color: #F6E7FA;
+  padding:5px;
+  border:transparent;
+  border-radius: 5px;
+}
+input::placeholder{
+  color:#575651;
+}
+button[type="submit"]:hover,.cbTarea:hover,.filtro:hover{
+  background-color: #e191f7;
+  cursor:pointer;
+}
+
+.borrarTarea{
+  background-color: transparent;
+  border-radius: 5px;
+}
+
+.borrarTarea:hover{
+  background-color:#f5d2ff;
+  cursor:pointer;
+}
+.filtro.seleccionado{
+  background-color: #e191f7;
+}
+.tareaGanadora{
+  background-color: rgb(243, 152, 242);
+}
+
+
